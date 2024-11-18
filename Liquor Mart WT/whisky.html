@@ -1,0 +1,146 @@
+<html>
+    <head>
+        <title>Whisky Page</title>
+    <script>
+        var arr=new Array();
+        var arr1=new Array();
+    function change(i){
+      var x=i.id;
+      const btn = 
+                document.getElementById(x);
+            if (btn.innerText === "DRINK") {
+                btn.innerText = "EJECT";
+                btn.style.backgroundColor="red";
+                if(x==="bt1"){
+                  arr.push("Blenders pride");
+                  arr1.push("980");
+                }
+                else if(x==="bt2"){
+                  arr.push("Oaksmith");
+                  arr1.push("800");
+                }
+                else if(x==="bt3"){
+                  arr.push("Oaksmith Gold");
+                  arr1.push("1150");
+                }
+                else if(x==="bt4"){
+                  arr.push("Highbury Classic");
+                  arr1.push("1030");
+                }
+                else if(x==="bt5"){
+                  arr.push("100 pipers");
+                  arr1.push("520");
+                }
+                else if(x==="bt6"){
+                  arr.push("Black and White");
+                  arr1.push("1890");
+                }
+                else if(x==="bt7"){
+                  arr.push("Johnnie Walker");
+                  arr1.push("1950");
+                }
+                if(x==="bt8"){
+                  arr.push("Ballantines");
+                  arr1.push("1955");
+                }
+                else if(x==="bt9"){
+                  arr.push("Johnnie Walker Black Label");
+                  arr1.push("2990");
+                }
+                else if(x==="bt10"){
+                  arr.push("Teachers Golden");
+                  arr1.push("2790");
+                }
+                else if(x==="bt11"){
+                  arr.push("Jamison Irish");
+                  arr1.push("2700");
+                }
+                else if(x==="bt12"){
+                  arr.push("Johnnie walker Blue label");
+                  arr1.push("15410");
+                }
+                
+            } else {
+                btn.innerText = "DRINK";
+                btn.style.backgroundColor="green";
+                if(x==="bt1"){
+                  arr=arr.filter(a=>a!="Blenders pride");
+                  arr1=arr1.filter(a=>a!="980");
+                }
+                else if(x==="bt2"){
+                  arr=arr.filter(a=>a!="Oaksmith");
+                  arr1=arr1.filter(a=>a!="800");
+                }
+                else if(x==="bt3"){
+                  arr=arr.filter(a=>a!="Oaksmith Gold");
+                  arr1=arr1.filter(a=>a!="1150");
+                }
+                else if(x==="bt4"){
+                  arr=arr.filter(a=>a!="Highbury Classic");
+                  arr1=arr1.filter(a=>a!="1030");
+                }
+                else if(x==="bt5"){
+                  arr=arr.filter(a=>a!="100 pipers");
+                  arr1=arr1.filter(a=>a!="520");
+                }
+                if(x==="bt6"){
+                  arr=arr.filter(a=>a!="Black and White");
+                  arr1=arr1.filter(a=>a!="1890");
+                }
+                else if(x==="bt7"){
+                  arr=arr.filter(a=>a!="Johnnie Walker");
+                  arr1=arr1.filter(a=>a!="1950");
+                }
+                else if(x==="bt8"){
+                  arr=arr.filter(a=>a!="Ballantines");
+                  arr1=arr1.filter(a=>a!="1955");
+                }
+                else if(x==="bt9"){
+                  arr=arr.filter(a=>a!="Johnnie Walker Black Label");
+                  arr1=arr1.filter(a=>a!="2990");
+                }
+                else if(x==="bt10"){
+                  arr=arr.filter(a=>a!="Teachers Golden");
+                  arr1=arr1.filter(a=>a!="2790");
+                }
+                else if(x==="bt11"){
+                  arr=arr.filter(a=>a!="Jamison Irish");
+                  arr1=arr1.filter(a=>a!="2700");
+                }
+                else if(x==="bt12"){
+                  arr=arr.filter(a=>a!="Johnnie walker Blue label");
+                  arr1=arr1.filter(a=>a!="15410");
+                }
+            }
+            localStorage.setItem("arr",arr);
+            localStorage.setItem("arr1",arr1);
+    }
+    </script>
+<link rel="stylesheet" href="all.css"/>
+    </head>
+<body bgcolor="black" background="https://png.pngtree.com/thumb_back/fw800/background/20231226/pngtree-elegant-black-silhouette-seamless-pattern-of-alcohol-bottles-whiskey-and-rum-image_13895236.png">
+    <br/>
+ 
+        <pre>
+        <a href="#tar1"><button class="button" tile="&#x20b9" >500 - 1500 </button></a>              <a href="#tar2"><button class="button">1500 - 2500</button></a>              <a href="#tar3"><button class="button">2500 - 5000</button></a>                 <a href="#tar4"><button class="button" >5000 and above</button></a >
+        </pre>
+        <a name="tar1" ><h4><div class="div">500-1500</div></h4></a>
+        <p><img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Image 2024-07-31 at 15.45.27 (2).jpeg"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Image 2024-07-31 at 15.45.27 (3).jpeg"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Image 2024-07-31 at 15.45.32 (1).jpeg"/></p>
+        <p><span><button onclick="change(this)" id="bt1"  class="but">DRINK</button></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span><button onclick="change(this)" id="bt2"  class="but">DRINK</button></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span><button onclick="change(this)" id="bt3"  class="but">DRINK</button></span></p>
+        <p><img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Image 2024-07-31 at 20.04.26.jpeg"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img class="img" src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Image 2024-07-31 at 20.04.24.jpeg"><br/>
+        <p><span><button onclick="change(this)" id="bt4"  class="but">DRINK</button></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span><button onclick="change(this)" id="bt5"  class="but">DRINK</button></span></p>
+        <a name="tar2"><h4><div class="div">1500 - 2500</div></h4></a><br/>
+        <img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Image 2024-07-31 at 20.04.26 (1).jpeg"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Image 2024-07-31 at 20.04.27 (1).jpeg"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Image 2024-07-31 at 20.04.29 (1).jpeg"/><br/>
+        <p><span><button onclick="change(this)" id="bt6"  class="but">DRINK</button></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span><button onclick="change(this)" id="bt7"  class="but">DRINK</button></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span><button onclick="change(this)" id="bt8"  class="but">DRINK</button></span></p>
+        <a name="tar3"><h4><div class="div">2500 - 5000</div></h4></a><br/>
+        <img class="img" src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Image 2024-07-31 at 20.04.27 (2).jpeg">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Image 2024-07-31 at 20.04.27.jpeg"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Image 2024-07-31 at 20.04.29 (2).jpeg"/><br/>
+        <p><span><button onclick="change(this)" id="bt9"  class="but">DRINK</button></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span><button onclick="change(this)" id="bt10"  class="but">DRINK</button></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span><button onclick="change(this)" id="bt11"  class="but">DRINK</button></span></p>
+        <a name="tar4"><h4><div class="div">5000 above</div></h4></a><br/>
+        <img class="img" src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Image 2024-07-31 at 20.04.29.jpeg"/></p>
+        <p><span><button onclick="change(this)" id="bt12"  class="but">DRINK</button></span></p>
+        <br/>
+        <p align="right"><a href="cart.html"><button  class="button1" name="subg">NEXT</button></a></p>
+</body>
+</html>
+
+

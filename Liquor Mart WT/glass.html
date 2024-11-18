@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>GLASS Page</title>
+    <script>
+      var arr=new Array();
+      var arr1=new Array();    
+    function change(i){
+      var x=i.id;
+      
+      const btn = 
+                document.getElementById(x);
+            if (btn.innerText === "SELECT") {
+                btn.innerText = "REMOVE";
+                btn.style.backgroundColor="red";
+                if(x==="gbt1"){
+                  arr.push("Ocean Whisky Thumbler");
+                  arr1.push(814);
+                }
+                else if(x==="gbt2"){
+                  arr.push("pasabahce glass");
+                  arr1.push(691);
+                }
+                else if(x==="gbt3"){
+                  arr.push("ocean Metro glass");
+                  arr1.push(995);
+                }
+                else if(x==="gbt4"){
+                  arr.push("ocean water thumbler");
+                  arr1.push(693);
+                }
+                else if(x==="gbt5"){
+                  arr.push("Yera glass");
+                  arr1.push(149);
+                }
+                 else if(x==="gbt6"){
+                  arr.push("ocean beer thumbler");
+                  arr1.push(788);
+                }
+              
+            } else {
+                btn.innerText = "SELECT";
+                btn.style.backgroundColor="green";
+                if(x==="gbt1"){
+                  arr=arr.filter(a=>a!="Ocean Whisky Thumbler");
+                  arr1=arr1.filter(a=>a!=814);
+                }
+                else if(x==="gbt2"){
+                  arr=arr.filter(a=>a!="pasabahce glass");
+                  arr1=arr1.filter(a=>a!=691);
+                }
+                else if(x==="gbt3"){
+                  arr=arr.filter(a=>a!="ocean Metro glass");
+                  arr1=arr1.filter(a=>a!=995);
+                }
+                else if(x==="gbt4"){
+                  arr=arr.filter(a=>a!="ocean water thumbler");
+                  arr1=arr1.filter(a=>a!=693);
+                }
+                else if(x==="gbt5"){
+                  arr=arr.filter(a=>a!="Yera glass");
+                  arr1=arr1.filter(a=>a!=149);
+                }
+                else if(x==="gbt6"){
+                  arr=arr.filter(a=>a!="ocean beer thumbler");
+                  arr1.filter(a=>a!=788);
+                }
+              
+            }
+            localStorage.setItem("arr",arr);
+            localStorage.setItem("arr1",arr1);
+    }
+    </script>
+    <link rel="stylesheet" href="all.css"/>
+        </head>
+<body bgcolor="black" background="https://png.pngtree.com/thumb_back/fw800/background/20231226/pngtree-elegant-black-silhouette-seamless-pattern-of-alcohol-bottles-whiskey-and-rum-image_13895236.png">
+    <br/>
+        
+        
+        <img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.48\WhatsApp Image 2024-09-22 at 11.10.44.jpeg"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.48\WhatsApp Image 2024-09-22 at 11.10.46 (1).jpeg"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.48\WhatsApp Image 2024-09-22 at 11.10.46 (2).jpeg"/><br/>
+        <p><span><button onclick="change(this)" id="gbt1"  class="but" >SELECT</button></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span><button onclick="change(this)" id="gbt2"  class="but">SELECT</button></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span><button onclick="change(this)" id="gbt3"  class="but">SELECT</button></span></p>
+        
+        <img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.48\WhatsApp Image 2024-09-22 at 11.10.47 (1).jpeg"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.48\WhatsApp Image 2024-09-22 at 11.10.47.jpeg"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.48\WhatsApp Image 2024-09-22 at 11.10.46.jpeg"/><br/>
+        <p><span><button onclick="change(this)" id="gbt4"  class="but">SELECT</button></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span><button onclick="change(this)" id="gbt5"  class="but">SELECT</button></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span><button onclick="change(this)" id="gbt6"  class="but">SELECT</button></span></p><br/><br/>
+        
+        <p align="right"><a href="cart.html"><button  class="button1" name="subg">NEXT</button></a></p>
+</body>
+</html>
+
+

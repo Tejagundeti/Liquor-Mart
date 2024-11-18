@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <title>Wine Page</title>
+    <script>
+      var arr=new Array();
+      var arr1=new Array();
+    function change(i){
+      var x=i.id;
+      const btn = 
+                document.getElementById(x);
+            if (btn.innerText === "DRINK") {
+                btn.innerText = "EJECT";
+                btn.style.backgroundColor="red";
+                if(x==="wbt1"){
+                  arr.push("Shiraz Wine");
+                  arr1.push("810");
+                }
+                else if(x==="wbt2"){
+                  arr.push("Sidus Premium");
+                  arr1.push("370");
+                }
+                else if(x==="wbt3"){
+                  arr.push("Reveilo Grillo");
+                  arr1.push("1220");
+                }
+                else if(x==="wbt4"){
+                  arr.push("Dia White Wine");
+                  arr1.push("550");
+                }
+                else if(x==="wbt5"){
+                  arr.push("Madhera");
+                  arr1.push("495");
+                }
+                else if(x==="wbt6"){
+                  arr.push("Madhera Red Wine");
+                  arr1.push("500");
+                }
+                else if(x==="wbt7"){
+                  arr.push("Chardonnay");
+                  arr1.push("1420");
+                }
+                else if(x==="wbt8"){
+                  arr.push("Jacobs");
+                  arr1.push("1100");
+                }
+                else if(x==="wbt9"){
+                  arr.push("Dia Red Wine");
+                  arr1.push("555");
+                }
+                else if(x==="wbt10"){
+                  arr.push("Talinga Park Rose");
+                  arr1.push("1940");
+                }
+                else if(x==="wbt11"){
+                  arr.push("Ferraud and Fils");
+                  arr1.push("1990");
+                }
+                else if(x==="wbt12"){
+                  arr.push("Zonin Chardony");
+                  arr1.push("1910");
+                }
+                else if(x==="wbt13"){
+                  arr.push("Black Tower");
+                  arr1.push("2250");
+                }
+                else if(x==="wbt14"){
+                  arr.push("Zonin Red");
+                  arr1.push("2620");
+                }
+            } else {
+                btn.innerText = "DRINK";
+                btn.style.backgroundColor="green";
+                if(x==="bt1"){
+                  arr=arr.filter(a=>a!="Shiraz Wine");
+                  arr1=arr1.filter(a=>a!="810");
+                }
+                else if(x==="bt2"){
+                  arr=arr.filter(a=>a!="Sidus Premium");
+                  arr1=arr1.filter(a=>a!="370");
+                }
+                else if(x==="bt3"){
+                  arr=arr.filter(a=>a!="Reveilo Grillo");
+                  arr1=arr1.filter(a=>a!="1220");
+                }
+                else if(x==="bt4"){
+                  arr=arr.filter(a=>a!="Dia White Wine");
+                  arr1=arr1.filter(a=>a!="550");
+                }
+                else if(x==="bt5"){
+                  arr=arr.filter(a=>a!="Madhera");
+                  arr1=arr1.filter(a=>a!="495");
+                }
+                if(x==="bt6"){
+                  arr=arr.filter(a=>a!="Madhera Red Wine");
+                  arr1=arr1.filter(a=>a!="500");
+                }
+                else if(x==="bt7"){
+                  arr=arr.filter(a=>a!="Chardonnay");
+                  arr1=arr1.filter(a=>a!="1420");
+                }
+                else if(x==="bt8"){
+                  arr=arr.filter(a=>a!="Jacobs");
+                  arr1=arr1.filter(a=>a!="1100");
+                }
+                else if(x==="bt9"){
+                  arr=arr.filter(a=>a!="Dia Red Wine");
+                  arr1=arr1.filter(a=>a!="555");
+                }
+                else if(x==="bt10"){
+                  arr=arr.filter(a=>a!="Talinga Park Rose");
+                  arr1=arr1.filter(a=>a!="1940");
+                }
+                else if(x==="bt11"){
+                  arr=arr.filter(a=>a!="Ferraud and Fils");
+                  arr1=arr1.filter(a=>a!="1990");
+                }
+                else if(x==="bt12"){
+                  arr=arr.filter(a=>a!="Zonin Chardony");
+                  arr1=arr1.filter(a=>a!="1910");
+                }
+                else if(x==="bt13"){
+                  arr=arr.filter(a=>a!="Black Tower");
+                  arr1=arr1.filter(a=>a!="2240");
+                }
+                else if(x==="bt14"){
+                  arr=arr.filter(a=>a!="Zonin Red");
+                  arr1=arr1.filter(a=>a!="2620");
+                }
+            }
+            localStorage.setItem("arr",arr);
+            localStorage.setItem("arr1",arr1);
+    }
+    </script>
+<link rel="stylesheet" href="all.css"/>
+    </head>
+<body bgcolor="black" background="https://png.pngtree.com/thumb_back/fw800/background/20231226/pngtree-elegant-black-silhouette-seamless-pattern-of-alcohol-bottles-whiskey-and-rum-image_13895236.png">
+    <br/>
+ 
+        <pre>
+        <a href="#tar1"><button class="button" tile="&#x20b9" >200 - 1500 </button></a>              <a href="#tar2"><button class="button">1500 - 2000</button></a>              <a href="#tar3"><button class="button">2000 above</button></a>
+        </pre>
+        <a name="tar1" ><h4><div class="div">200-1500</div></h4></a>
+        <p><img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.31\WhatsApp Image 2024-09-22 at 11.02.37.jpeg"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.31\WhatsApp Image 2024-09-22 at 11.02.44.jpeg"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.31\WhatsApp Image 2024-09-22 at 11.02.45 (1).jpeg"/></p>
+        <p><span><button onclick="change(this)" id="wbt1"  class="but">DRINK</button></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span><button onclick="change(this)" id="wbt2"  class="but">DRINK</button></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span><button onclick="change(this)" id="wbt3"  class="but">DRINK</button></span></p>
+        <p><img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.31\WhatsApp Image 2024-09-22 at 11.02.47 (1).jpeg"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.31\WhatsApp Image 2024-09-22 at 11.02.48 (1).jpeg"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.31\WhatsApp Image 2024-09-22 at 11.02.49.jpeg"/><br/>
+        <p><span><button onclick="change(this)" id="wbt4"  class="but">DRINK</button></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span><button onclick="change(this)" id="wbt5"  class="but">DRINK</button></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span><button onclick="change(this)" id="wbt6"  class="but">DRINK</button></span></p>
+        <p><img class="img" src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.31\WhatsApp Image 2024-09-22 at 11.02.50 (1).jpeg">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img class="img" src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.31\WhatsApp Image 2024-09-22 at 11.02.45.jpeg">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.31\WhatsApp Image 2024-09-22 at 11.02.48.jpeg"/></p>
+        <p><span><button onclick="change(this)" id="wbt7"  class="but">DRINK</button></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span><button onclick="change(this)" id="wbt8"  class="but">DRINK</button></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span><button onclick="change(this)" id="wbt9"  class="but">DRINK</button></span></p><br/>
+        <a name="tar2"><h4><div class="div">1500 - 2000</div></h4></a><br/>
+        <img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.31\WhatsApp Image 2024-09-22 at 11.02.44 (1).jpeg"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.31\WhatsApp Image 2024-09-22 at 11.02.46.jpeg"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.31\WhatsApp Image 2024-09-22 at 11.02.50.jpeg"/><br/>
+        <p><span><button onclick="change(this)" id="wbt10"  class="but">DRINK</button></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span><button onclick="change(this)" id="wbt11"  class="but">DRINK</button></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span><button onclick="change(this)" id="wbt12"  class="but">DRINK</button></span></p>
+        
+        <a name="tar3"><h4><div class="div">2000 above</div></h4></a><br/>
+        <img class="img" src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.31\WhatsApp Image 2024-09-22 at 11.02.46 (1).jpeg">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.31\WhatsApp Image 2024-09-22 at 11.02.47.jpeg"/><br/>
+        <p><span><button onclick="change(this)" id="wbt13"  class="but">DRINK</button></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span><button onclick="change(this)" id="wbt14"  class="but">DRINK</button></span></p>
+        <br/>
+        <p align="right"><a href="cart.html"><button  class="button1" name="subg">NEXT</button></a></p>
+</body>
+</html>
+
+

@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <script>
+          function valid(){
+          var a=document.reg.mail.value;
+          var b=document.reg.password.value;
+          var i=0,j=0,flag=0,c=0,d=0;
+          var s="gmail.com"
+          for(i=0;i<a.length;i++){
+            if((a.charAt(i)>='a' && a.charAt(i)<='z')||(a.charAt(i)>='A' && a.charAt(i)<='Z')||(a.charAt(i)>='0' && a.charAt(i)<='9')||a.charAt(i)=='@')
+          {
+            if(a.charAt(i)=='@'){
+              flag=1;
+              for(j=i+1;j<a.length;j++){
+                if(a.charAt(j)!=s.charAt(j-i-1)){
+                  d=1;
+                  window.alert("Email is not valid!");
+                  break;
+                }
+            }
+          }
+        }
+          else{
+            c=1;
+            d=1;
+          window.alert("Email cannot consists of special characters like "+a.charAt(i));
+          break;
+          }
+          if(flag==1)
+             break;
+          }
+        if(flag==0 && c==0){
+        window.alert("Email is not valid!");
+        d=1;
+        } 
+          
+        var n=b.length;
+           
+        if(n<8 && flag==1 && c==0){
+          d=1;
+        window.alert("Password cannot consists less than 8 characters"); 
+        }
+        if(d==0)
+        window.location.href="main.html";
+
+          }
+
+          </script>
+        <style>
+          body {
+ 
+ text-align: center;
+  background-color: blanchedalmond;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+            .button {
+              background-color: #04AA6D;
+             
+              color: white;
+              padding: 6px 8px;
+              text-align: center;
+              font-size: 16px;
+              margin: 2px 1px;
+              cursor: pointer;
+              border: black;
+            }
+            .button:hover {
+          border-radius: 16px;
+          padding: 8px 10px;
+                }
+            .img:hover{
+                width: 220px;
+                height: 40px;
+            }
+            </style>
+    </head>
+    <body background="C:\Users\johny\OneDrive\Desktop\WT\bg1.jpg"  >
+        <br/><br/><br/><br/><br/>
+        <h1><b style="color:rgba(255, 0, 0, 0.607);">DRINK IT</b></h1>
+        <form name="reg">
+        <p style="color:greenyellow;">Mail   ID: <input type="text" maxlength="50" name="mail"/><br/><br/>
+        Password: <input type="password" maxlength="16" name="password"/></p><br/>
+      <pre><input type="button" class="button"  value="Login&nbsp;&#127863;" onclick="valid()"/>           <a href="login.html"><button class="button" type="submit" value="Cancel">Cancel&nbsp;&#129414;</button></a><br/></pre>
+       
+        </form>
+        <h3 style="color: aquamarine;"><b>OR</b></h3>
+        <img class="img" src="C:\Users\johny\OneDrive\Desktop\WT\1_lE0aykaLr4IdtlRMw1e6kw.jpg" width="200" height="40" style="border-radius: 12px;"/>
+        <p >
+        <pre style="color:cyan;text-align:left;  font-size: x-large;bottom: 10px;">--------------<strong><i>Team</i></strong>--------------
+<b>D.Harsha Vardhan(C)    22EG105K45</b>
+Ch.Sriish Reddy        22EG105K01
+B.Johny Goud           22EG105K52
+S.Sharath Raju         22EG105K55</pre>
+        </p>
+    </body>
+</html>

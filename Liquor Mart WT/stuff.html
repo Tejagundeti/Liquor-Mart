@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Stuff Page</title>
+    <script >
+    function change(i){
+      var x=i.id;
+      var arr=new Array();
+      var arr1=new Array();
+      const btn = 
+                document.getElementById(x);
+            if (btn.innerText === "SELECT") {
+                btn.innerText = "REMOVE";
+                btn.style.backgroundColor="red";
+                if(x==="sbt1"){
+                  arr.push("Mark premium Roasted Cashew");
+                  arr1.push("230");
+                }
+                else if(x==="sbt2"){
+                  arr.push("Smart choice Cashew Roasted");
+                  arr1.push("312");
+                }
+                else if(x==="sbt3"){
+                  arr.push("Roasted Almonds");
+                  arr1.push("150");
+                }
+                else if(x==="sbt4"){
+                  arr.push("Roasted Peanuts");
+                  arr1.push("70");
+                }
+              
+            } else {
+                btn.innerText = "SELECT";
+                btn.style.backgroundColor="green";
+                if(x==="gbt1"){
+                  arr=arr.filter(a=>a!="Mark premium Roasted Cashew");
+                  arr1=arr1.filter(a=>a!="230");
+                }
+                else if(x==="gbt2"){
+                  arr=arr.filter(a=>a!="Smart choice Cashew Roasted");
+                  arr1=arr1.filter(a=>a!="312");
+                }
+                else if(x==="gbt3"){
+                  arr=arr.filter(a=>a!="Roasted Almonds");
+                  arr1=arr1.filter(a=>a!="150");
+                }
+                else if(x==="gbt4"){
+                  arr=arr.filter(a=>a!="Roasted Peanuts");
+                  arr1=arr1.filter(a=>a!="70");
+                }
+                }
+                localStorage.setItem("arr",arr);
+                localStorage.setItem("arr1",arr1);
+            }
+    
+    </script>
+        <link rel="stylesheet" href="all.css"/>
+    </head>
+<body bgcolor="black" background="https://png.pngtree.com/thumb_back/fw800/background/20231226/pngtree-elegant-black-silhouette-seamless-pattern-of-alcohol-bottles-whiskey-and-rum-image_13895236.png">
+    <br/>
+    
+        
+        <img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.40\WhatsApp Image 2024-09-22 at 11.05.10.jpeg"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.40\WhatsApp Image 2024-09-22 at 11.05.13 (1).jpeg"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.40\WhatsApp Image 2024-09-22 at 11.05.13 (2).jpeg"/><br/>
+        <p><span><button onclick="change(this)" id="sbt1"  class="but">SELECT</button></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span><button onclick="change(this)" id="sbt2"  class="but">SELECT</button></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span><button onclick="change(this)" id="sbt3"  class="but">SELECT</button></span></p>
+
+        <img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.40\WhatsApp Image 2024-09-22 at 11.05.14.jpeg"/>
+      </p><span><button onclick="change(this)" id="sbt4"  class="but">SELECT</button></span></p>
+      <p align="right"><a href="cart.html"><button  class="button1" name="subg">NEXT</button></a></p>
+</body>
+</html>
+
+

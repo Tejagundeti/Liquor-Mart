@@ -1,0 +1,74 @@
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover ;
+  }
+  .button1 {
+      background-color: #04AA6D;
+      
+      color: white;
+      padding: 6px 20px;
+      text-align: center;
+      font-size: 16px;
+      margin: 2px 1px;
+      cursor: pointer;
+      border: black;
+    }
+    .button1:hover {
+  border-radius: 16px;
+  padding: 8px 23px;
+    }
+h4{
+  color: aliceblue;
+}
+.but{
+  padding:10px 90px ;
+  text-align: center;
+  background-color: green;
+  font-size: large;
+  border-radius: 10px;
+}
+.but:active{
+  background-color: red;
+}
+.button {
+    background-color: whitesmoke;
+    color: rgb(230, 12, 12);
+    border: red;
+    padding: 5px 20px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 2px 1px;
+    
+    border-radius: 12px;
+  }
+  .img{
+    height: 250;
+    width: 250;
+    border-radius:16px;
+    -webkit-filter: blur(3px);
+filter: blur(3px);
+-webkit-transition: .3s ease-in-out;
+transition: .3s ease-in-out;
+  }
+  .img:hover{
+    -webkit-filter: blur(0);
+    filter: blur(0);
+  }
+  
+  .button:hover {
+background-color:darkgreen;
+font-size: 20px;
+      }
+      .div {
+background-color: lightgrey;
+width: 100px;
+border: 2px solid green;
+padding: 10px;
+margin: 2px;
+border-radius: 12px;
+color:violet;
+height:10px;
+text-align: center;
+}

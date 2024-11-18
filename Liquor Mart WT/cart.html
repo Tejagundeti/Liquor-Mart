@@ -1,0 +1,28 @@
+<html>
+    <head></head>
+    <body bgcolor="pink">
+        <script>
+            
+            var a=localStorage.getItem("arr");
+            var a1=localStorage.getItem("arr1");
+            document.write("<h3>CART</h3>");
+            var tot=0;
+            document.write("<b>  Items      </b>");
+            document.write("<br/>");
+            for(var i=0;i<a.length;i++){
+            document.writeln(a[i]);
+            
+            }
+            for(i=0;i<a1.length;i++){
+            tot+=parseInt(a1);
+            
+            }
+            document.write("         <p>Total Amount:"+tot+"</p>");
+            function go(){
+                window.location.href="final.html";
+            }
+            </script>
+            <button onclick="go()">Next</button>
+  
+    </body>
+</html>

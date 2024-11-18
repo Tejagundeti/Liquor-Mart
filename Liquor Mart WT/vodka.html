@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Vodka Page</title>
+    <script>
+      var arr=new Array();
+      var arr1=new Array();   
+    function change(i){
+      var x=i.id;
+      const btn = 
+                document.getElementById(x);
+            if (btn.innerText === "DRINK") {
+                btn.innerText = "EJECT";
+                btn.style.backgroundColor="red";
+                if(x==="vbt1"){
+                  arr.push("Magic Moments");
+                  arr1.push("340");
+                }
+                else if(x==="vbt2"){
+                  arr.push("Absolute Vodka");
+                  arr1.push("650");
+                }
+                else if(x==="vbt3"){
+                  arr.push("Smrinoff vodka");
+                  arr1.push("880");
+                }
+                else if(x==="vbt4"){
+                  arr.push("skyy vodka");
+                  arr1.push("2090");
+                }
+                else if(x==="vbt5"){
+                  arr.push("Kettle one vodka");
+                  arr1.push("2050");
+                }
+                
+            } else {
+                btn.innerText = "DRINK";
+                btn.style.backgroundColor="green";
+                if(x==="vbt1"){
+                  arr=arr.filter(a=>a!="Magic Moments");
+                  arr1=arr1.filter(a=>a!="340");
+                }
+                else if(x==="vbt2"){
+                  arr=arr.filter(a=>a!="Absolute Vodka");
+                  arr1=arr1.filter(a=>a!="650");
+                }
+                else if(x==="vbt3"){
+                  arr=arr.filter(a=>a!="Smrinoff vodka");
+                  arr1=arr1.filter(a=>a!="880");
+                }
+                else if(x==="vbt4"){
+                  arr=arr.filter(a=>a!="skyy vodka");
+                  arr1=arr1.filter(a=>a!="2090");
+                }
+                else if(x==="vbt5"){
+                  arr=arr.filter(a=>a!="Kettle one vodka");
+                  arr1=arr1.filter(a=>a!="2050");
+                }
+            }
+            localStorage.setItem("arr",arr);
+            localStorage.setItem("arr1",arr1);
+    }
+    </script>
+       <link rel="stylesheet" href="all.css"/>
+    </head>
+<body bgcolor="black" background="https://png.pngtree.com/thumb_back/fw800/background/20231226/pngtree-elegant-black-silhouette-seamless-pattern-of-alcohol-bottles-whiskey-and-rum-image_13895236.png">
+    <br/>
+ 
+        <pre>
+        <a href="#tar1"><button class="button" tile="&#x20b9" >100 - 500 </button></a>              <a href="#tar2"><button class="button">500 - 2000</button></a>              <a href="#tar3"><button class="button">2000 above</button></a> 
+        </pre>
+        <a name="tar1" ><h4><div class="div">100-500</div></h4></a>
+        
+        <p><img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.03\WhatsApp Image 2024-09-22 at 10.52.26.jpeg"/><br/>
+        <p><span><button onclick="change(this)" id="vbt1"  class="but">DRINK</button></span></p>
+        <a name="tar2"><h4><div class="div">500 - 2000</div></h4></a><br/>
+        <img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.03\WhatsApp Image 2024-09-22 at 10.52.23.jpeg"/>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.03\WhatsApp Image 2024-09-22 at 10.52.25.jpeg"/><br/>
+        <p><span><button onclick="change(this)" id="vbt2"  class="but">DRINK</button></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span><button onclick="change(this)" id="vbt3"  class="but">DRINK</button></span></p>
+        <a name="tar3"><h4><div class="div">2000 above</div></h4></a><br/>
+        <img class="img" src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.03\WhatsApp Image 2024-09-22 at 10.52.26 (1).jpeg">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img class="img"  src="C:\Users\johny\OneDrive\Desktop\WT\WhatsApp Unknown 2024-09-22 at 11.46.03\WhatsApp Image 2024-09-22 at 10.52.26 (2).jpeg"/><br/>
+        <p><span><button onclick="change(this)" id="vbt4"  class="but">DRINK</button></span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span><button onclick="change(this)" id="vbt5"  class="but">DRINK</button></span></p>
+        <p align="right"><a href="cart.html"><button  class="button1" name="subg">NEXT</button></a></p>
+</body>
+</html>
+
+
